@@ -1,1 +1,448 @@
-
+[
+  {
+    "pageId": "home",
+    "content": [
+      {
+        "sectionId": "hero",
+        "content": {
+          "title": "Kuasai Pasar Derivatif",
+          "subtitle": "Mengelola Risiko, Membuka Nilai Tambah, dan Navigasi Instrumen Keuangan Modern",
+          "description": "Platform serba ada untuk semua hal yang berkaitan dengan derivatif dan instrumen keuangan"
+        }
+      },
+      {
+        "sectionId": "definitionSection",
+        "content": {
+          "title": "Apa itu Derivatif?",
+          "subtitle": "Mekanisme Inti & Tujuan Utama",
+          "description": "Derivatif adalah kontrak keuangan yang nilainya diturunkan dari—dan bergantung pada—kinerja aset acuan, tolok ukur, atau indeks."
+        }
+      },
+      {
+        "sectionId": "purposeSection",
+        "content": {
+          "title": "Tujuan Strategis",
+          "subtitle": "Empat Pendorong Utama Pasar Derivatif",
+          "description": "Derivatif bukan sekadar alat spekulasi; derivatif adalah instrumen penting yang memungkinkan pelaku pasar melindungi operasional dari volatilasi, mengalokasikan modal secara efisien, dan menetapkan sinyal harga global yang akurat di seluruh pasar yang saling terhubung.",
+          "list": [
+            {
+              "title": "Lindung Nilai Risiko (Risk Hedging)",
+              "description": "Melindungi portofolio dan operasional bisnis dari pergerakan harga yang merugikan, fluktuasi mata uang, atau lonjakan suku bunga dengan mengunci harga atau menetapkan batas bawah kerugian."
+            },
+            {
+              "title": "Penemuan Harga (Price Discovery)",
+              "description": "Merefleksikan ekspektasi pasar global dan berita real-time ke dalam penilaian aset masa depan, berfungsi sebagai indikator awal dari penawaran, permintaan, dan tren pasar spot."
+            },
+            {
+              "title": "Leverage & Efisiensi Modal",
+              "description": "Memungkinkan pelaku pasar mengendalikan paparan posisi besar dengan persyaratan modal awal yang relatif kecil (margin atau premi)."
+            },
+            {
+              "title": "Spekulasi & Arbitrase",
+              "description": "Memungkinkan investor memperoleh imbal hasil dari pergerakan arah pasar yang diantisipasi, sementara pedagang memanfaat perbedaan harga sementara di berbagai pasar atau instrumen."
+            }
+          ]
+        }
+      },
+      {
+        "sectionId": "productSection",
+        "content": {
+          "title": "Empat Derivatif Inti",
+          "subtitle": "Pondasi Manajemen Risiko",
+          "description": "Lansekap derivatif global ditopang oleh empat struktur kontrak utama—masing-masing dirancang untuk menangani profil risiko tertentu, mekanisme penyelesaian, dan preferensi operasional mulai dari lingkungan bursa yang terstandarisasi hingga perjanjian bilateral yang disesuaikan."
+        },
+        "list": [
+          {
+            "title": "Futures (Kontrak Berjangka)",
+            "icon": "Futures",
+            "description": "Perjanjian standar yang diperdagangkan di bursa untuk membeli atau menjual aset pada harga yang ditentukan di masa mendatang, yang diperhitungkan ke pasar (mark-to-market) setiap hari."
+          },
+          {
+            "title": "Forwards (Kontrak Serah)",
+            "icon": "Forwards",
+            "description": "Perjanjian Over-The-Counter (OTC) privat yang dapat disesuaikan antara dua pihak untuk mempertukarkan aset pada harga tetap di masa mendatang."
+          },
+          {
+            "title": "Options (Opsi)",
+            "icon": "Options",
+            "description": "Kontrak yang memberi pembeli hak, tetapi bukan kewajiban, untuk membeli (Call) atau menjual (Put) aset pada harga eksekusi tertentu dalam jangka waktu yang ditetapkan."
+          },
+          {
+            "title": "Swaps (Swap)",
+            "icon": "Swaps",
+            "description": "Perjanjian antara dua pihak untuk mempertukarkan arus kas selama periode tertentu, biasanya berdasarkan suku bunga, mata uang, atau komoditas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pageId": "details",
+    "content": [
+      {
+        "productId": "futures",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Kontrak Futures",
+              "subtitle": "Perjanjian Standar yang Diperdagangkan di Bursa",
+              "description": "Kontrak futures adalah perjanjian standar untuk membeli atau menjual aset tertentu pada harga yang ditetapkan pada tanggal di masa mendatang. Diperdagangkan di bursa terpusat, kontrak ini diperhitungkan ke pasar (mark-to-market) setiap hari untuk meminimalkan risiko gagal bayar."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Mekanisme Produk",
+              "subtitle": "Kontrak Standar & Penyelesaian Harian",
+              "description": "Futures beroperasi dalam kerangka regulasi yang ketat dan spesifikasi kontrak yang terstandarisasi, memastikan likuiditas dan menghilangkan negosiasi langsung antar pihak.",
+              "list": [
+                {
+                  "title": "Standardisasi Bursa",
+                  "description": "Ukuran kontrak, tanggal kadaluwarsa, dan spesifikasi kualitas yang tetap, yang ditentukan oleh bursa (misalnya, CME)."
+                },
+                {
+                  "title": "Mark-to-Market (MTM) Harian",
+                  "description": "Keuntungan dan kerugian diselesaikan setiap hari ke akun margin pedagang, mencegah akumulasi risiko kredit."
+                },
+                {
+                  "title": "Persyaratan Margin",
+                  "description": "Membutuhkan Margin Awal (untuk masuk) dan Margin Pemeliharaan (untuk mempertahankan), menerapkan jaminan keuangan."
+                },
+                {
+                  "title": "Lembaga Kliring Terpusat",
+                  "description": "Bertindak sebagai pembeli untuk setiap penjual dan penjual untuk setiap pembeli, secara virtual menghilangkan risiko kredit pihak lawan (counterparty risk)."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Pendorong Utama & Manfaat",
+              "subtitle": "Likuiditas, Leverage, dan Kepastian Harga",
+              "description": "Pelaku pasar mengandalkan futures untuk mengunci harga masa depan dan mendapatkan paparan aset yang efisien secara modal di seluruh kelas aset utama global.",
+              "list": [
+                {
+                  "title": "Lindung Nilai Operasional",
+                  "description": "Produsen dan konsumen (misalnya, maskapai penerbangan, petani) mengunci harga input/output masa depan untuk menstabilkan margin."
+                },
+                {
+                  "title": "Likuiditas Tinggi",
+                  "description": "Buku pesanan yang dalam memungkinkan investor institusi untuk masuk dan keluar dari posisi besar secara cepat dengan slippage yang rendah."
+                },
+                {
+                  "title": "Efisiensi Modal",
+                  "description": "Kemampuan leverage yang tinggi memungkinkan pedagang mengendalikan paparan besar dengan modal awal yang minimal."
+                },
+                {
+                  "title": "Harga yang Transparan",
+                  "description": "Penemuan harga pasar terbuka secara terus-menerus memastikan penilaian real-time dan rentang bid-ask yang tipis."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Faktor Risiko & Keterbatasan",
+              "subtitle": "Mengelola Leverage dan Kekakuan Kontrak",
+              "description": "Meskipun sangat likuid, futures membawa komitmen yang kaku dan dinamika leverage yang memerlukan manajemen modal secara aktif.",
+              "list": [
+                {
+                  "title": "Risiko Margin Call",
+                  "description": "Ayunan harga harian dapat memicu kewajiban penambahan dana tunai, memaksa likuidasi posisi jika tidak dipenuhi."
+                },
+                {
+                  "title": "Risiko Kewajiban",
+                  "description": "Para pihak terikat untuk melakukan eksekusi pada saat jatuh tempo terlepas dari seberapa menguntungkan atau tidak menguntungkannya harga pasar spot."
+                },
+                {
+                  "title": "Kurangnya Kustomisasi",
+                  "description": "Ukuran dan tanggal kontrak yang terstandarisasi mungkin tidak sepenuhnya sejajar dengan kebutuhan operasional tertentu."
+                },
+                {
+                  "title": "Risiko Basis",
+                  "description": "Potensi ketidaksesuaian antara harga futures dan harga spot tunai aktual dari aset acuan pada saat penyelesaian lindung nilai."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "productId": "forwards",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Kontrak Forwards",
+              "subtitle": "Perjanjian Khusus Over-The-Counter (OTC)",
+              "description": "Forwards adalah kontrak bilateral privat yang tidak terstandarisasi untuk membeli atau menjual aset pada harga yang ditetapkan di masa mendatang. Disesuaikan langsung antara dua pihak, kontrak ini menawarkan fleksibilitas operasional penuh."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Mekanisme Produk",
+              "subtitle": "Kustomisasi Bilateral & Penyelesaian Tunggal",
+              "description": "Berbeda dengan futures, forwards dibuat langsung antar institusi tanpa intervensi bursa atau penyeimbangan kembali kas harian.",
+              "list": [
+                {
+                  "title": "Struktur OTC Bilateral",
+                  "description": "Dinegosiasikan langsung antara dua institusi (biasanya perusahaan dan bank) di luar bursa."
+                },
+                {
+                  "title": "Syarat 100% Dapat Disesuaikan",
+                  "description": "Ukuran aset, tanggal pengiriman pasti, tingkatan, dan lokasi pengiriman disesuaikan dengan spesifikasi yang presisi."
+                },
+                {
+                  "title": "Penyelesaian Titik Tunggal",
+                  "description": "Penyelesaian tunai atau fisik terjadi secara eksklusif pada saat jatuh tempo kontrak—tanpa mark-to-market harian."
+                },
+                {
+                  "title": "Kontrak Privat",
+                  "description": "Syarat, penetapan harga, dan identitas pihak lawan tetap bersifat pribadi dan tidak terdaftar di bursa pasar publik."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Pendorong Utama & Manfaat",
+              "subtitle": "Penyelarasan Presisi dan Kepastian Arus Kas",
+              "description": "Perusahaan memanfaatkan kontrak forward ketika kontrak bursa yang terstandarisasi gagal memenuhi jadwal, volume, atau spesifikasi mata uang mereka yang tepat.",
+              "list": [
+                {
+                  "title": "Penyelarasan Lindung Nilai Sempurna",
+                  "description": "Menghilangkan risiko basis dengan mencocokkan ukuran kontrak dan tanggal pengiriman secara tepat dengan arus kas perusahaan."
+                },
+                {
+                  "title": "Tanpa Beban Kas Harian",
+                  "description": "Tidak adanya margin call harian menghindari gangguan arus kas perantara selama masa berlaku kontrak."
+                },
+                {
+                  "title": "Perlindungan Valuta Asing (FX) yang Disesuaikan",
+                  "description": "Banyak digunakan oleh pengimpor dan pengeluar untuk mengunci nilai tukar masa depan yang pasti."
+                },
+                {
+                  "title": "Mode Penyelesaian Fleksibel",
+                  "description": "Dirancang untuk pengiriman barang secara fisik aktual atau penyelesaian kas bersih pada saat jatuh tempo."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Faktor Risiko & Keterbatasan",
+              "subtitle": "Kerentanan Pihak Lawan dan Ilikuiditas",
+              "description": "Kompromi utama dari kustomisasi pada kontrak forward adalah paparan kredit dan ketidakmampuan untuk keluar lebih awal.",
+              "list": [
+                {
+                  "title": "Risiko Kredit Pihak Lawan",
+                  "description": "Risiko gagal bayar yang tinggi jika pihak lawan gagal memenuhi kewajiban saat jatuh tempo, karena tidak ada lembaga kliring yang menjamin transaksi."
+                },
+                {
+                  "title": "Ilikuiditas & Keterikatan",
+                  "description": "Pasar sekunder tidak tersedia; membatalkan atau memindahkan kontrak forward sebelum jatuh tempo memerlukan persetujuan bilateral."
+                },
+                {
+                  "title": "Transparansi Harga Nol",
+                  "description": "Kurangnya kuotasi harga publik membuat estimasi nilai wajar bergantung pada pemodelan internal."
+                },
+                {
+                  "title": "Akumulasi Kerugian Belum Terealisasi",
+                  "description": "Penyelesaian saat jatuh tempo berarti kerugian terakumulasi selama jangka waktu kontrak, bukannya dibayarkan setiap hari."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "productId": "options",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Kontrak Options",
+              "subtitle": "Hak Asimetris dan Hasil yang Disesuaikan",
+              "description": "Options memberi pembeli hak—tetapi bukan kewajiban—untuk membeli (Call) atau menjual (Put) aset pada harga eksekusi tetap. Ini menciptakan profil risiko asimetris dengan kerugian terbatas dan potensi keuntungan terbuka."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Mekanisme Produk",
+              "subtitle": "Harga Eksekusi, Premi, dan Kewajiban Asimetris",
+              "description": "Dinamika opsi bergantung pada dua peran berbeda: pembeli opsi yang membeli fleksibilitas, dan penjual/penulis opsi yang mengambil risiko demi mendapatkan premi.",
+              "list": [
+                {
+                  "title": "Calls vs. Puts",
+                  "description": "Calls memberikan hak untuk membeli; Puts memberikan hak untuk menjual aset acuan."
+                },
+                {
+                  "title": "Premi Awal",
+                  "description": "Biaya non-refundable yang dibayarkan oleh pembeli kepada penjual (penulis) untuk memegang hak kontrak."
+                },
+                {
+                  "title": "Harga Eksekusi & Kadaluwarsa",
+                  "description": "Harga transaksi tetap yang dijamin hingga tanggal kadaluwarsa yang ditentukan."
+                },
+                {
+                  "title": "Gaya Eksekusi",
+                  "description": "Opsi gaya Amerika dapat dieksekusi kapan saja sebelum kadaluwarsa; opsi gaya Eropa hanya dapat dieksekusi pada tanggal kadaluwarsa itu sendiri."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Pendorong Utama & Manfaat",
+              "subtitle": "Perlindungan Portofolio dan Profil Imbal Hasil Non-Linear",
+              "description": "Opsi bersifat unik karena memungkinkan pelaku pasar untuk melindungi diri dari risiko penurunan sambil tetap membuka peluang untuk keuntungan kenaikan harga.",
+              "list": [
+                {
+                  "title": "Asuransi Kerugian Penurunan",
+                  "description": "Protective Puts bertindak sebagai polis asuransi untuk portofolio saham terhadap kejatuhan pasar."
+                },
+                {
+                  "title": "Risiko Terbatas untuk Pembeli",
+                  "description": "Kerugian maksimum untuk pembeli opsi secara ketat terbatas pada premi awal yang dibayarkan."
+                },
+                {
+                  "title": "Serbaguna Secara Strategis",
+                  "description": "Memungkinkan penghasilan pendapatan (Covered Calls), taruhan directional, atau perdagangan volatilitas (Straddles)."
+                },
+                {
+                  "title": "Leverage Modal",
+                  "description": "Mengendalikan aset acuan yang signifikan dengan pengerahan modal yang relatif rendah melalui premi opsi."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Faktor Risiko & Keterbatasan",
+              "subtitle": "Peluruhan Waktu dan Potensi Kerugian Tanpa Batas bagi Penjual",
+              "description": "Opsi melibatkan faktor penetapan harga yang kompleks, di mana peluruhan waktu bekerja secara terus-menerus merugikan pembeli, dan penjual menghadapi paparan risiko yang parah.",
+              "list": [
+                {
+                  "title": "Theta / Peluruhan Waktu",
+                  "description": "Nilai opsi secara alami mengikis setiap hari seiring kontrak mendekati tanggal kadaluwarsanya."
+                },
+                {
+                  "title": "Risiko Kehilangan Premi",
+                  "description": "Persentase tinggi dari opsi out-of-the-money kadaluwarsa tanpa nilai sama sekali, merelakan 100% modal yang diinvestasikan."
+                },
+                {
+                  "title": "Risiko Tanpa Batas untuk Penjual",
+                  "description": "Penjual opsi tanpa lindung nilai (naked option writers) mengambil risiko ekstrem yang berpotensi tidak terbatas untuk premi awal yang terbatas."
+                },
+                {
+                  "title": "Kompleksitas Penetapan Harga",
+                  "description": "Valuasi bergantung pada variabel yang saling terhubung termasuk harga spot, harga eksekusi, waktu, suku bunga, dan volatilitas tersirat."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "productId": "swaps",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Kontrak Swap",
+              "subtitle": "Pertukaran Arus Kas Bilateral",
+              "description": "Swaps adalah perjanjian OTC yang disesuaikan antara dua pihak untuk mempertukarkan urutan arus kas selama jangka waktu tertentu, biasanya mengubah suku bunga mengambang atau paparan volatil menjadi kewajiban yang tetap dan terprediksi."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Mekanisme Produk",
+              "subtitle": "Pokok Notional dan Penyelesaian Kas Selisih",
+              "description": "Swaps tidak melibatkan pertukaran jumlah pokok awal; sebaliknya, selisih bunga bersih atau imbal hasil aset dihitung terhadap suatu tolok ukur.",
+              "list": [
+                {
+                  "title": "Jumlah Pokok Notional",
+                  "description": "Jumlah dasar teoritis yang digunakan secara eksklusif untuk menghitung perhitungan arus kas—tidak pernah benar-benar dipertukarkan."
+                },
+                {
+                  "title": "Arus Tetap vs. Mengambang",
+                  "description": "Satu kaki membayar tingkat bunga tetap yang disepakati, sementara kaki sebaliknya membayar tingkat bunga acuan (misalnya, SOFR, EURIBOR)."
+                },
+                {
+                  "title": "Mekanisme Netting",
+                  "description": "Arus kas yang terjadi pada tanggal yang sama diperhitungkan selisihnya (netting), dengan hanya selisih bersih yang ditransfer antar pihak."
+                },
+                {
+                  "title": "Durasi Multi-Tahun",
+                  "description": "Biasanya merupakan instrumen berjangka panjang mulai dari 2 hingga 30+ tahun hingga jatuh tempo."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Pendorong Utama & Manfaat",
+              "subtitle": "Optimalisasi Neraca dan Restrukturisasi Utang",
+              "description": "Perusahaan dan lembaga keuangan memanfaatkan swaps untuk mengubah struktur kewajiban tanpa perlu mendanai ulang pinjaman utama."
+            },
+            "list": [
+              {
+                "title": "Transformasi Risiko Suku Bunga",
+                "description": "Mengubah utang perusahaan suku bunga mengambang menjadi utang suku bunga tetap untuk mengunci biaya bunga."
+              },
+              {
+                "title": "Penyelarasan Risiko Mata Uang",
+                "description": "Cross-currency swaps melindung nilai utang luar negeri multi-nasional dan mencocokkan arus pendapatan."
+              },
+              {
+                "title": "Biaya Pinjaman Lebih Rendah",
+                "description": "Memungkinkan pihak lawan memanfaatkan keunggulan komparatif relatif di berbagai pasar kredit."
+              },
+              {
+                "title": "Fleksibilitas Di Luar Neraca (Off-Balance-Sheet)",
+                "description": "Menyesuaikan paparan suku bunga tanpa mengubah atau menegosiasikan ulang kewajiban utang utama."
+              }
+            ]
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Faktor Risiko & Keterbatasan",
+              "subtitle": "Paparan Kredit Jangka Panjang dan Pergeseran Suku Bunga",
+              "description": "Karena jangka waktunya yang panjang, swaps menciptakan ketergantungan pihak lawan jangka panjang dan paparan terhadap pergeseran ekonomi struktural yang lebih luas.",
+              "list": [
+                {
+                  "title": "Risiko Kredit Pihak Lawan yang Diperpanjang",
+                  "description": "Durasi kontrak yang panjang meningkatkan probabilitas gagal bayar pihak lawan selama siklus ekonomi."
+                },
+                {
+                  "title": "Gesekan Pengakhiran Lebih Awal",
+                  "description": "Keluar dari swap sebelum jatuh tempo memerlukan negosiasi yang mahal, biaya pembatalan, atau transaksi penyeimbang."
+                },
+                {
+                  "title": "Risiko Arah Suku Bunga",
+                  "description": "Jika suku bunga pasar bergerak menguntungkan berlawanan dengan kuncian tetap Anda, Anda menanggung kerugian kesempatan yang signifikan."
+                },
+                {
+                  "title": "Kompleksitas Regulasi ISDA",
+                  "description": "Memerlukan dokumentasi induk yang komprehensif (ISDA Master Agreements) dan kerangka kerja manajemen jaminan (CSAs)."
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
