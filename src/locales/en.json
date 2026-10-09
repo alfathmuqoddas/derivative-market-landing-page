@@ -5,7 +5,6 @@
       {
         "sectionId": "hero",
         "content": {
-          "image": "./hero.jpg",
           "title": "Master the Derivative Market",
           "subtitle": "Managing Risk, Unlocking Value, and Navigating Modern Financial Instruments",
           "description": "One-stop platform for all things related to derivatives and financial instruments"
@@ -240,7 +239,206 @@
               "title": "Risk Factors & Limitations",
               "subtitle": "Counterparty Vulnerability and Illiquidity",
               "description": "The primary trade-off for customization in forward contracts is credit exposure and the inability to exit early.",
-              "list": []
+              "list": [
+                {
+                  "title": "Counterparty Credit Risk",
+                  "description": "High risk of default if the opposing party fails to perform at maturity, as no clearinghouse guarantees the trade."
+                },
+                {
+                  "title": "Illiquidity & Lock-In",
+                  "description": "Secondary markets do not exist; unwinding or transferring a forward before maturity requires bilateral consent."
+                },
+                {
+                  "title": "Zero Price Transparency",
+                  "description": "Lack of public pricing quotes makes fair value estimation dependent on internal modeling."
+                },
+                {
+                  "title": "Unrealized Loss Accumulation",
+                  "description": "Settlement at maturity means losses accumulate over the term rather than being paid down daily."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "productId": "options",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Options Contracts",
+              "subtitle": "Asymmetric Rights and Tailored Payoffs",
+              "description": "Options provide the buyer the right—but not the obligation—to buy (Call) or sell (Put) an asset at a fixed strike price. This creates asymmetric risk profiles with capped downside and open upside potential."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Product Mechanics",
+              "subtitle": "Strikes, Premiums, and Asymmetric Obligations",
+              "description": "Option dynamics depend on two distinct roles: option buyers who purchase flexibility, and option writers who absorb risk for a premium.",
+              "list": [
+                {
+                  "title": "Calls vs. Puts",
+                  "description": "Calls confer the right to buy; Puts confer the right to sell the underlying asset."
+                },
+                {
+                  "title": "Upfront Premium",
+                  "description": "The non-refundable cost paid by the buyer to the seller (writer) for holding the contract rights."
+                },
+                {
+                  "title": "Strike Price & Expiration",
+                  "description": "Fixed transaction price guaranteed up to a defined expiration date."
+                },
+                {
+                  "title": "Exercise Styles",
+                  "description": "American options can be exercised anytime before expiry; European options only on the expiration date itself."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Primary Drivers & Benefits",
+              "subtitle": "Portfolio Protection and Non-Linear Return Profiles",
+              "description": "Options are unique because they allow market participants to protect against downside risks while leaving the door open for upside gains.",
+              "list": [
+                {
+                  "title": "Downside Insurance",
+                  "description": "Protective Puts act as an insurance policy for stock portfolios against market crashes."
+                },
+                {
+                  "title": "Capped Risk for Buyers",
+                  "description": "Maximum loss for option buyers is strictly limited to the upfront premium paid."
+                },
+                {
+                  "title": "Strategic Versatility",
+                  "description": "Enables income generation (Covered Calls), directional bets, or volatility trades (Straddles)."
+                },
+                {
+                  "title": "Capital Leverage",
+                  "description": "Controls significant underlying assets with relatively low capital deployment via options premiums."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Risk Factors & Limitations",
+              "subtitle": "Time Decay and Unlimited Loss Potential for Sellers",
+              "description": "Options involve complex pricing factors, where time decay works continuously against buyers, and writers face severe risk exposure.",
+              "list": [
+                {
+                  "title": "Theta / Time Decay",
+                  "description": "Option value naturally erodes every day as the contract approaches its expiration date."
+                },
+                {
+                  "title": "Premium Loss Risk",
+                  "description": "A high percentage of out-of-the-money options expire completely worthless, forfeiting 100% of invested capital."
+                },
+                {
+                  "title": "Unlimited Risk for Sellers",
+                  "description": "Naked option writers take on extreme, potentially unlimited risk for a finite upfront premium."
+                },
+                {
+                  "title": "Pricing Complexity",
+                  "description": "Valuations depend on interconnected variables including spot price, strike, time, interest rates, and implied volatility."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "productId": "swaps",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Swap Contracts",
+              "subtitle": "Bilateral Cash Flow Exchanges",
+              "description": "Swaps are customized OTC agreements between two parties to exchange sequences of cash flows over a specified timeline, typically converting floating rates or volatile exposure into fixed, predictable liabilities."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Product Mechanics",
+              "subtitle": "Notional Principal and Differential Cash Settlement",
+              "description": "Swaps do not involve exchanging initial principal amounts; instead, net interest or asset return differentials are calculated against a benchmark.",
+              "list": [
+                {
+                  "title": "Notional Principal Amount",
+                  "description": "Theoretical base amount used exclusively to calculate cash flow calculations—never actually exchanged."
+                },
+                {
+                  "title": "Fixed vs. Floating Streams",
+                  "description": "One leg pays a fixed agreed rate, while the opposing leg pays a reference rate (e.g., SOFR, EURIBOR)."
+                },
+                {
+                  "title": "Netting Mechanism",
+                  "description": "Cash flows occurring on the same date are netted, with only the net difference transferring between parties."
+                },
+                {
+                  "title": "Multi-Year Durations",
+                  "description": "Typically long-dated instruments ranging from 2 to 30+ years in maturity."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Primary Drivers & Benefits",
+              "subtitle": "Balance Sheet Optimization and Debt Restructuring",
+              "description": "Corporations and financial institutions leverage swaps to transform liability structures without refinancing underlying loans.",
+              "list": [
+                {
+                  "title": "Interest Rate Risk Transformation",
+                  "description": "Converts floating-rate corporate debt into fixed-rate debt to lock in interest costs."
+                },
+                {
+                  "title": "Currency Risk Alignment",
+                  "description": "Cross-currency swaps hedge multi-national foreign debt and matching revenue streams."
+                },
+                {
+                  "title": "Lower Borrowing Costs",
+                  "description": "Allows counterparties to exploit relative comparative advantages in different credit markets."
+                },
+                {
+                  "title": "Off-Balance-Sheet Flexibility",
+                  "description": "Adjusts interest rate exposure without altering or renegotiating underlying debt obligations."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Risk Factors & Limitations",
+              "subtitle": "Long-Horizon Credit Exposure and Interest Rate Shifts",
+              "description": "Due to their extended tenors, swaps create long-term counterparty dependencies and exposure to broader structural economic shifts.",
+              "list": [
+                {
+                  "title": "Extended Counterparty Credit Risk",
+                  "description": "Long contract durations increase the probability of counterparty default over economic cycles."
+                },
+                {
+                  "title": "Early Termination Friction",
+                  "description": "Exiting a swap before maturity requires costly negotiation, breaking fees, or offsetting trades."
+                },
+                {
+                  "title": "Interest Rate Direction Risk",
+                  "description": "If market interest rates move favorably opposite to your fixed lock, you incur significant opportunity loss."
+                },
+                {
+                  "title": "ISDA Regulatory Complexity",
+                  "description": "Requires comprehensive master documentation (ISDA Master Agreements) and collateral management framework (CSAs)."
+                }
+              ]
             }
           }
         ]
