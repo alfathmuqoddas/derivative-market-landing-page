@@ -1,0 +1,250 @@
+[
+  {
+    "pageId": "home",
+    "content": [
+      {
+        "sectionId": "hero",
+        "content": {
+          "image": "./hero.jpg",
+          "title": "Master the Derivative Market",
+          "subtitle": "Managing Risk, Unlocking Value, and Navigating Modern Financial Instruments",
+          "description": "One-stop platform for all things related to derivatives and financial instruments"
+        }
+      },
+      {
+        "sectionId": "definitionSection",
+        "content": {
+          "title": "What is a Derivative?",
+          "subtitle": "Core Mechanics & Fundamental Purpose",
+          "description": "A Derivative is a financial contract whose value is derived from—and dependent on—the performance of an underlying asset, benchmark, or index."
+        }
+      },
+      {
+        "sectionId": "purposeSection",
+        "content": {
+          "title": "Strategic Purpose",
+          "subtitle": "Four Core Drivers of the Derivative Market",
+          "description": "Derivatives are not merely speculative tools; they are essential instruments that allow market participants to insulate operations from volatility, allocate capital efficiently, and establish accurate global price signals across interconnected markets.",
+          "list": [
+            {
+              "title": "Risk Hedging",
+              "description": "Protects portfolios and business operations against adverse price movements, currency fluctuations, or interest rate spikes by locking in prices or setting downside floors."
+            },
+            {
+              "title": "Price Discovery",
+              "description": "Reflects global market expectations and real-time news into future asset valuations, serving as an early indicator of supply, demand, and spot market trends."
+            },
+            {
+              "title": "Leverage & Capital Efficiency",
+              "description": "Enables market participants to control large positional exposure with a relatively small upfront capital requirement (margin or premium)."
+            },
+            {
+              "title": "Speculation & Arbitrage",
+              "description": "Allows investors to generate returns from anticipated market direction, while traders exploit temporary price discrepancies across different markets or instruments."
+            }
+          ]
+        }
+      },
+      {
+        "sectionId": "productSection",
+        "content": {
+          "title": "The Four Core Derivatives",
+          "subtitle": "Building Blocks of Risk Management",
+          "description": "The global derivatives landscape is anchored by four primary contract structures—each engineered to handle specific risk profiles, settlement mechanisms, and operational preferences ranging from standardized exchange environments to tailored bilateral agreements."
+        },
+        "list": [
+          {
+            "title": "Futures",
+            "icon": "Futures",
+            "description": "Standardized, exchange-traded agreements to buy or sell an asset at a predetermined price on a specified future date, marked-to-market daily."
+          },
+          {
+            "title": "Forwards",
+            "icon": "Forwards",
+            "description": "Private, customizable Over-The-Counter (OTC) agreements between two parties to exchange an asset at a fixed price on a future date."
+          },
+          {
+            "title": "Options",
+            "icon": "Options",
+            "description": "Contracts that give the buyer the right, but not the obligation, to buy (Call) or sell (Put) an asset at a specified strike price within a set timeframe."
+          },
+          {
+            "title": "Swaps",
+            "icon": "Swaps",
+            "description": "Agreements between two counterparties to exchange sequences of cash flows over a period, typically based on interest rates, currencies, or commodities."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "pageId": "details",
+    "content": [
+      {
+        "productId": "futures",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Futures Contracts",
+              "subtitle": "Standardized, Exchange-Traded Agreements",
+              "description": "Futures contracts are standardized agreements to buy or sell a specific asset at a set price on a future date. Traded on centralized exchanges, they are marked-to-market daily to minimize default risk."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Product Mechanics",
+              "subtitle": "Standardized Contracts & Daily Settlement",
+              "description": "Futures operate within strict regulatory frameworks and standardized contract specifications, ensuring liquidity and removing direct counterparty negotiations.",
+              "list": [
+                {
+                  "title": "Exchange Standardization",
+                  "description": "Fixed contract sizes, expiration dates, and quality specifications defined by the exchange (e.g., CME)."
+                },
+                {
+                  "title": "Daily Mark-to-Market (MTM)",
+                  "description": "Gains and losses are settled daily into trader margin accounts, preventing cumulative credit risk."
+                },
+                {
+                  "title": "Margin Requirements",
+                  "description": "Requires Initial Margin (to enter) and Maintenance Margin (to hold), enforcing financial collateral."
+                },
+                {
+                  "title": "Central Clearinghouse",
+                  "description": "Acts as the buyer to every seller and seller to every buyer, virtually eliminating counterparty credit risk."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Primary Drivers & Benefits",
+              "subtitle": "Liquidity, Leverage, and Price Certainty",
+              "description": "Market participants rely on futures to lock in forward pricing and gain capital-efficient exposure across major global asset classes.",
+              "list": [
+                {
+                  "title": "Operational Hedging",
+                  "description": "Producers and consumers (e.g., airlines, farmers) lock in future input/output prices to stabilize margins."
+                },
+                {
+                  "title": "High Liquidity",
+                  "description": "Deep order books allow institutional investors to enter and exit large positions quickly with low slippage."
+                },
+                {
+                  "title": "Capital Efficiency",
+                  "description": "High leverage capabilities allow traders to control large exposure with minimal upfront equity."
+                },
+                {
+                  "title": "Transparent Pricing",
+                  "description": "Continuous open market price discovery ensures real-time valuation and tight bid-ask spreads."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Risk Factors & Limitations",
+              "subtitle": "Managing Leverage and Rigidity",
+              "description": "While highly liquid, futures carry rigid commitments and leverage dynamics that require active capital management.",
+              "list": [
+                {
+                  "title": "Margin Call Risk",
+                  "description": "Daily price swings can trigger mandatory cash top-ups, forcing position liquidation if unfulfilled."
+                },
+                {
+                  "title": "Obligation Risk",
+                  "description": "Parties are bound to execute at expiration regardless of how favorable or unfavorable spot market prices become."
+                },
+                {
+                  "title": "Lack of Customization",
+                  "description": "Standardized contract sizes and dates may not perfectly align with specific operational needs."
+                },
+                {
+                  "title": "Basis Risk",
+                  "description": "Potential mismatch between the futures price and the actual cash spot price of the underlying asset upon hedge settlement."
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "productId": "forwards",
+        "content": [
+          {
+            "sectionId": "overview",
+            "content": {
+              "title": "Forward Contracts",
+              "subtitle": "Bespoke Over-The-Counter (OTC) Agreements",
+              "description": "Forwards are private, non-standardized bilateral contracts to buy or sell an asset at a set price on a future date. Tailored directly between two parties, they offer complete operational flexibility."
+            }
+          },
+          {
+            "sectionId": "features",
+            "content": {
+              "title": "Product Mechanics",
+              "subtitle": "Bilateral Customization & Single Settlement",
+              "description": "Unlike futures, forwards are built directly between counterparty institutions without exchange intervention or daily cash rebalancing.",
+              "list": [
+                {
+                  "title": "Bilateral OTC Structure",
+                  "description": "Negotiated directly between two institutions (typically corporation and bank) off-exchange."
+                },
+                {
+                  "title": "100% Customizable Terms",
+                  "description": "Asset size, exact delivery date, grade, and delivery location are tailored to precise specifications."
+                },
+                {
+                  "title": "Single Point Settlement",
+                  "description": "Cash or physical settlement occurs exclusively at contract maturity—no daily mark-to-market."
+                },
+                {
+                  "title": "Private Contracts",
+                  "description": "Terms, pricing, and counterparty identities remain private and unlisted from public market exchanges."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "benefits",
+            "content": {
+              "title": "Primary Drivers & Benefits",
+              "subtitle": "Precision Matching and Cash Flow Certainty",
+              "description": "Corporations utilize forward contracts when standardized exchange contracts fail to match their exact timeline, volume, or currency specifications.",
+              "list": [
+                {
+                  "title": "Perfect Hedge Alignment",
+                  "description": "Eliminates basis risk by matching contract size and delivery date exactly to corporate cash flows."
+                },
+                {
+                  "title": "No Daily Cash Drag",
+                  "description": "Absence of daily margin calls avoids intermediate cash flow disruptions during the contract lifecycle."
+                },
+                {
+                  "title": "Tailored Foreign Exchange (FX) Protection",
+                  "description": "Widely used by importers and exporters to lock in exact future exchange rates."
+                },
+                {
+                  "title": "Flexible Settlement Modes",
+                  "description": "Designed for either actual physical delivery of goods or net cash settlement at expiry."
+                }
+              ]
+            }
+          },
+          {
+            "sectionId": "risks",
+            "content": {
+              "title": "Risk Factors & Limitations",
+              "subtitle": "Counterparty Vulnerability and Illiquidity",
+              "description": "The primary trade-off for customization in forward contracts is credit exposure and the inability to exit early.",
+              "list": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
