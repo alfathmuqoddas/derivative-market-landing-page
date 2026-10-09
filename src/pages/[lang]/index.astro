@@ -1,0 +1,28 @@
+---
+import {getEntry} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'id' } },
+  ];
+}
+const { lang } = Astro.params;
+
+// Fetch entry
+const entry = await getEntry('translations', lang);
+const home = entry?.data?.pages?.find((page: any) => page.pageId === 'home');
+const hero = home?.content?.find((section: any) => section.sectionId === 'hero');
+const definitionSection = home?.content?.find((section: any) => section.sectionId === 'definitionSection');
+const purposeSection = home?.content?.find((section: any) => section.sectionId === 'purposeSection');
+const productSection = home?.content?.find((section: any) => section.sectionId === 'productSection');
+
+---
+<Layout>
+    <main>
+        <h1>{hero?.content?.title}</h1>
+        <p>{hero?.content?.subtitle}</p>
+        <p>{hero?.content?.description}</p>
+    </main>
+</Layout>
