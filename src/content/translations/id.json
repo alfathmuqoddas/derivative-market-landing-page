@@ -16,25 +16,29 @@
       "description": "Derivatif bukan sekadar alat spekulasi; derivatif adalah instrumen esensial yang memungkinkan pelaku pasar melindungi operasional dari volatilitas, mengalokasikan modal secara efisien, dan menetapkan sinyal harga global yang akurat di seluruh pasar yang saling terhubung.",
       "list": [
         {
+          "id": "riskHedging",
           "title": "Lindung Nilai Risiko (Hedging)",
           "description": "Melindungi portofolio dan operasi bisnis dari pergerakan harga yang merugikan, fluktuasi mata uang, atau lonjakan suku bunga dengan mengunci harga atau menetapkan batas bawah kerugian."
         },
         {
+          "id": "priceDiscovery",
           "title": "Pembentukan Harga (Price Discovery)",
           "description": "Mencerminkan ekspektasi pasar global dan berita waktu nyata (real-time) ke dalam penilaian aset masa depan, berfungsi sebagai indikator awal penawaran, permintaan, dan tren pasar spot."
         },
         {
+          "id": "leverage",
           "title": "Leverage & Efisiensi Modal",
           "description": "Memungkinkan pelaku pasar untuk mengendalikan paparan posisi besar dengan persyarat modal awal yang relatif kecil (margin atau premi)."
         },
         {
+          "id": "speculation",
           "title": "Spekulasi & Arbitrase",
           "description": "Memungkinkan investor menghasilkan imbal hasil dari perkiraan arah pasar, sementara pedagang memanfaat perbedaan harga sementara di berbagai pasar atau instrumen."
         }
       ]
     },
     "productSection": {
-      "title": "Empat Derivatif Inti",
+      "title": "Produk Inti Keuangan Derivatif",
       "subtitle": "Komponen Utama Manajemen Risiko",
       "description": "Lansekap derivatif global didukung oleh empat struktur kontrak utama—masing-masing dirancang untuk menangani profil risiko spesifik, mekanisme penyelesaian, dan preferensi operasional mulai dari lingkungan bursa terstandarisasi hingga perjanjian bilateral yang disesuaikan.",
       "list": [

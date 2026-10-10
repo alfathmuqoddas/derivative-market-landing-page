@@ -1,19 +1,20 @@
-import { signal, effect } from "@preact/signals";
+import { signal } from "@preact/signals";
 
 const LOCALES = ["en", "id"] as const;
 type Locale = (typeof LOCALES)[number];
 
-export function useLocaleSwitch() {
-  const currentLocale = signal("en");
+// Create a global signal
+export const currentLocale = signal<Locale>("en");
 
-  effect(() => {
-    if (typeof window !== "undefined") {
-      const firstSegment = window.location.pathname.split("/")[1] as Locale;
-      if (LOCALES.includes(firstSegment)) {
-        currentLocale.value = firstSegment;
-      }
+export function useLocaleSwitch() {
+  // Call this once inside your component to sync initial state from URL
+  const initLocale = () => {
+    if (typeof window === "undefined") return;
+    const firstSegment = window.location.pathname.split("/")[1] as Locale;
+    if (LOCALES.includes(firstSegment)) {
+      currentLocale.value = firstSegment;
     }
-  });
+  };
 
   const getLocaleUrl = (targetLocale: Locale): string => {
     if (typeof window === "undefined") return `/${targetLocale}`;
@@ -21,7 +22,6 @@ export function useLocaleSwitch() {
     const { pathname, search, hash } = window.location;
     const segments = pathname.split("/").filter(Boolean);
 
-    // Replace the first segment (current locale) with the target locale
     if (LOCALES.includes(segments[0] as Locale)) {
       segments[0] = targetLocale;
     } else {
@@ -31,11 +31,9 @@ export function useLocaleSwitch() {
     return `/${segments.join("/")}${search}${hash}`;
   };
 
-  const switchLocale = (targetLocale: Locale) => {
-    if (typeof window !== "undefined") {
-      window.location.href = getLocaleUrl(targetLocale);
-    }
+  return {
+    currentLocale,
+    getLocaleUrl,
+    initLocale,
   };
-
-  return { currentLocale, getLocaleUrl, switchLocale, locales: LOCALES };
 }

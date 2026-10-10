@@ -22,6 +22,7 @@ const translations = defineCollection({
         description: z.string(),
         list: z.array(
           z.object({
+            id: z.string(),
             title: z.string(),
             description: z.string(),
           }),

@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, fontProviders } from "astro/config";
 
 import cloudflare from "@astrojs/cloudflare";
 
@@ -22,4 +22,18 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
+  fonts: [
+    {
+      provider: fontProviders.google(),
+      name: "IBM Plex Sans",
+      cssVariable: "--font-sans",
+      fallbacks: ["sans-serif"],
+    },
+    {
+      provider: fontProviders.google(),
+      name: "Special Gothic Expanded One",
+      cssVariable: "--font-serif",
+      fallbacks: ["serif"],
+    },
+  ],
 });

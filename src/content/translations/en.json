@@ -16,31 +16,35 @@
       "description": "Derivatives are not merely speculative tools; they are essential instruments that allow market participants to insulate operations from volatility, allocate capital efficiently, and establish accurate global price signals across interconnected markets.",
       "list": [
         {
+          "id": "riskHedging",
           "title": "Risk Hedging",
           "description": "Protects portfolios and business operations against adverse price movements, currency fluctuations, or interest rate spikes by locking in prices or setting downside floors."
         },
         {
+          "id": "priceDiscovery",
           "title": "Price Discovery",
           "description": "Reflects global market expectations and real-time news into future asset valuations, serving as an early indicator of supply, demand, and spot market trends."
         },
         {
+          "id": "leverage",
           "title": "Leverage & Capital Efficiency",
           "description": "Enables market participants to control large positional exposure with a relatively small upfront capital requirement (margin or premium)."
         },
         {
+          "id": "speculation",
           "title": "Speculation & Arbitrage",
           "description": "Allows investors to generate returns from anticipated market direction, while traders exploit temporary price discrepancies across different markets or instruments."
         }
       ]
     },
     "productSection": {
-      "title": "The Four Core Derivatives",
+      "title": "Core Derivatives Products",
       "subtitle": "Building Blocks of Risk Management",
       "description": "The global derivatives landscape is anchored by four primary contract structures—each engineered to handle specific risk profiles, settlement mechanisms, and operational preferences ranging from standardized exchange environments to tailored bilateral agreements.",
       "list": [
         {
           "title": "Futures",
-          "icon": "Futures",
+          "icon": "futures",
           "description": "Standardized, exchange-traded agreements to buy or sell an asset at a predetermined price on a specified future date, marked-to-market daily."
         },
         {

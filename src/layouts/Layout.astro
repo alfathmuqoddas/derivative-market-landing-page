@@ -1,4 +1,6 @@
 ---
+import {Font} from 'astro:assets';
+import Navbar from '../components/Navbar.tsx';
 import '../styles/global.css';
 
 const currentLang = Astro.currentLocale || 'en';
@@ -13,10 +15,12 @@ const currentLang = Astro.currentLocale || 'en';
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<Font cssVariable="--font-sans" preload />
+		<Font cssVariable="--font-serif" preload />
 		<slot name="head" />
 	</head>
 	<body>
+		<Navbar client:only="preact"/>
 		<slot />
 	</body>
 </html>
