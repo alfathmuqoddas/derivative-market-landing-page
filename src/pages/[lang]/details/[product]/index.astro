@@ -1,0 +1,31 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import {getEntry} from 'astro:content';
+
+const {product} = Astro.params;
+
+export async function getStaticPaths() {
+  return [
+    { params: { product: 'futures', lang: 'en' } },
+    { params: { product: 'futures', lang: 'id' } },
+    { params: { product: 'forwards', lang: 'en' } },
+    { params: { product: 'forwards', lang: 'id' } },
+    { params: { product: 'options', lang: 'en' } },
+    { params: { product: 'options', lang: 'id' } },
+    { params: { product: 'swaps', lang: 'en' } },
+    { params: { product: 'swaps', lang: 'id' } },
+  ];
+}
+
+const entry = await getEntry('translations', Astro.params.lang);
+const derivativeProduct = entry?.data?.details?.[product as keyof typeof entry.data.details];
+---
+<Layout>
+    <title slot="head">Details {product}</title>
+    <main>
+        <section class="container mx-auto px-4 py-24">
+            <h1 class="text-blue-800 font-serif text-xl md:text-3xl">Details {product}</h1>
+            <p class=" md:text-xl">{derivativeProduct?.overview?.description}</p>
+        </section>
+    </main>
+</Layout>

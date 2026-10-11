@@ -44,22 +44,22 @@
       "list": [
         {
           "title": "Futures (Kontrak Berjangka)",
-          "icon": "Futures",
+          "icon": "futures",
           "description": "Perjanjian terstandarisasi yang diperdagangkan di bursa untuk membeli atau menjual aset pada harga yang ditentukan sebelumnya pada tanggal masa depan yang ditentukan, disesuaikan ke harga pasar (mark-to-market) setiap hari."
         },
         {
           "title": "Forwards (Kontrak Serah)",
-          "icon": "Forwards",
+          "icon": "forwards",
           "description": "Perjanjian Over-The-Counter (OTC) pribadi yang disesuaikan antara dua pihak untuk mempertukarkan aset pada harga tetap di tanggal masa depan."
         },
         {
           "title": "Options (Opsi)",
-          "icon": "Options",
+          "icon": "options",
           "description": "Kontrak yang memberi pembeli hak, tetapi bukan kewajiban, untuk membeli (Call) atau menjual (Put) aset pada harga eksekusi (strike price) tertentu dalam jangka waktu yang ditentukan."
         },
         {
           "title": "Swaps (Swap)",
-          "icon": "Swaps",
+          "icon": "swaps",
           "description": "Perjanjian antara dua pihak lawan untuk mempertukarkan serangkaian arus kas selama periode tertentu, biasanya berdasarkan suku bunga, mata uang, atau komoditas."
         }
       ]

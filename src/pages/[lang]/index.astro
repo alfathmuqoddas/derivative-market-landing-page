@@ -63,7 +63,7 @@ const iconMap = {
           <div class="container mx-auto text-center">
             <h1 class="md:text-xl font-serif text-blue-800">{purposeSection?.title}</h1>
             <p class="text-xl md:text-3xl">{purposeSection?.subtitle}</p>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
               {purposeSection?.list?.map((item: any) => {
                 const CurrentIcon = iconMap[item.id as keyof typeof iconMap];
                 return (
@@ -87,6 +87,17 @@ const iconMap = {
               <p class="text-xl md:text-3xl">{productSection?.subtitle}</p>
             </div>
             <p class="flex-1">{productSection?.description}</p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mt-16">
+            {productSection?.list?.map((item: any) => {
+              return (
+                <a href={`/${lang}/details/${item.icon}`} class="flex flex-col gap-2 bg-white group cursor-pointer">
+                  <img src={`/${item.icon}-illustration1.jpg`} alt={`${item.icon}-illustration1`} class="aspect-video w-full h-auto object-cover rounded-2xl mb-2"/>
+                  <h2 class="font-serif text-blue-900 group-hover:underline group-active:underline underline-offset-2 group-hover:decoration-blue-800">{item.title}</h2>
+                  <p class="text-gray-700">{item.description}</p>
+                </a>
+              )
+            })}
           </div>
         </section>
     </main>

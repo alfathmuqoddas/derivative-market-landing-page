@@ -49,17 +49,17 @@
         },
         {
           "title": "Forwards",
-          "icon": "Forwards",
+          "icon": "forwards",
           "description": "Private, customizable Over-The-Counter (OTC) agreements between two parties to exchange an asset at a fixed price on a future date."
         },
         {
           "title": "Options",
-          "icon": "Options",
+          "icon": "options",
           "description": "Contracts that give the buyer the right, but not the obligation, to buy (Call) or sell (Put) an asset at a specified strike price within a set timeframe."
         },
         {
           "title": "Swaps",
-          "icon": "Swaps",
+          "icon": "swaps",
           "description": "Agreements between two counterparties to exchange sequences of cash flows over a period, typically based on interest rates, currencies, or commodities."
         }
       ]

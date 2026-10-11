@@ -20,10 +20,14 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`${isScrolled ? "bg-white/30 backdrop-blur-md shadow-sm" : "bg-transparent"} flex items-center max-w-7xl fixed left-1/2 -translate-x-1/2 rounded-full p-4 top-4 h-16 z-50 w-full`}
+      className={`${isScrolled ? "bg-white/30 backdrop-blur-md shadow-sm" : "bg-transparent"} flex items-center max-w-384 fixed left-1/2 -translate-x-1/2 rounded-full p-4 top-4 h-16 z-50 w-full`}
     >
       <div class="flex justify-between items-center w-full">
-        <h1 className="text-xl font-serif font-bold text-blue-800">DERIVIO</h1>
+        <a href="/">
+          <h1 className="text-xl font-serif font-bold text-blue-800">
+            DERIVIO
+          </h1>
+        </a>
         <div class="flex items-center gap-4">
           <LocaleToggle />
           <a href="#" className="text-gray-700 hover:text-gray-800">
