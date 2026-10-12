@@ -92,7 +92,7 @@ const iconMap = {
             {productSection?.list?.map((item: any) => {
               return (
                 <a href={`/${lang}/details/${item.icon}`} class="flex flex-col gap-2 bg-white group cursor-pointer">
-                  <img src={`/${item.icon}-illustration1.jpg`} alt={`${item.icon}-illustration1`} class="aspect-video w-full h-auto object-cover rounded-2xl mb-2"/>
+                  <img src={`/${item.icon}-illustration1.jpg`} loading="lazy" alt={`${item.icon}-illustration1`} class="aspect-video w-full h-auto object-cover rounded-2xl mb-2"/>
                   <h2 class="font-serif text-blue-900 group-hover:underline group-active:underline underline-offset-2 group-hover:decoration-blue-800">{item.title}</h2>
                   <p class="text-gray-700">{item.description}</p>
                 </a>
