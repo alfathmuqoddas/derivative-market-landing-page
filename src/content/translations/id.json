@@ -63,6 +63,11 @@
           "description": "Perjanjian antara dua pihak lawan untuk mempertukarkan serangkaian arus kas selama periode tertentu, biasanya berdasarkan suku bunga, mata uang, atau komoditas."
         }
       ]
+    },
+    "onboardingSection": {
+      "title": "Mulai Pertukaran Derivasi dengan Derivio",
+      "description": "Nikmati keuntungan perjanjian derivat terdesentralisasi dengan biaya rendah dan tingkat ketertiban tinggi. Daftar sekarang dan mulai pertukaran sekarang!",
+      "buttonText": "Daftar Sekarang!"
     }
   },
   "details": {

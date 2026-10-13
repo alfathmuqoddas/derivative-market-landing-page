@@ -40,6 +40,11 @@ const translations = defineCollection({
           }),
         ),
       }),
+      onboardingSection: z.object({
+        title: z.string(),
+        description: z.string(),
+        buttonText: z.string(),
+      }),
     }),
     details: z.object({
       futures: z.object({

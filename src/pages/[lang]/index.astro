@@ -1,7 +1,7 @@
 ---
 import {getEntry} from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import {ArrowRight, ShieldAlert, Compass, TrendingUp, ArrowLeftRight} from "@lucide/astro"
+import {Hero, Definition as DefinitionSection, PurposeSection, ProductSection, OnboardingSection} from '../../components/home';
 
 export async function getStaticPaths() {
   return [
@@ -17,88 +17,18 @@ const hero = entry?.data?.home?.hero;
 const definitionSection = entry?.data?.home?.definitionSection;
 const purposeSection = entry?.data?.home?.purposeSection;
 const productSection = entry?.data?.home?.productSection;
-
-const iconMap = {
-  riskHedging: ShieldAlert,
-  priceDiscovery: Compass,
-  leverage: TrendingUp,
-  speculation: ArrowLeftRight,
-}
+const onboardingSection = entry?.data?.home?.onboardingSection;
 
 ---
 <Layout>
-    <title slot="head">Home</title>
+    <title slot="head">Derivio Home</title>
+    <meta slot="head" name="title" content="Derivio"/>
+    <meta slot="head" name="description" content="Derivio is a decentralized derivatives marketplace that allows users to trade and hedge derivatives with low fees and high liquidity."/>
     <main>
-        <section class="relative w-full h-screen">
-          <img src="/hero.jpg" class="object-cover h-full w-full brightness-90" alt="hero"/>
-            <div class="absolute bottom-12 left-4 md:bottom-16 md:left-16">
-              <h1 class="text-white font-serif text-5xl md:text-6xl font-bold">
-                {hero?.title}
-              </h1>
-              <p class="text-white md:text-xl mt-4">
-                {hero?.description}
-              </p>
-              <div class="flex flex-col md:flex-row gap-2 mt-6 mr-4">
-                <button name="sign-up" class="bg-blue-800 hover:bg-blue-900 shadow-sm min-w-64 cursor-pointer flex justify-center items-center gap-2 text-white font-bold py-2 px-4 rounded-full">
-                  Sign Up
-                </button>
-                <button name="learn-more" class="border-2 bg-transparent min-w-64 shadow-sm border-blue-800 hover:bg-blue-800 cursor-pointer flex  justify-center items-center gap-2 text-white font-bold py-2 px-4 rounded-full">
-                  Learn More
-                </button>
-              </div>
-            </div>
-        </section>
-        <section class="container mx-auto px-4 py-24 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div class="w-full md:w-1/2">
-          <h1 class="md:text-xl font-serif text-blue-800">{definitionSection?.title}</h1>
-          <p class="text-xl md:text-3xl">{definitionSection?.description}</p>
-          <button name="learn-more" class="bg-blue-800 hover:bg-blue-900 cursor-pointer flex items-center gap-2 text-white font-bold py-2 px-8 mt-6 rounded-full">
-            Learn More
-            <ArrowRight class="size-6"/>
-          </button>
-          </div>
-          <img src="/what-is-derivative.jpg" alt="what-is-derivative" class="w-full md:w-1/2 rounded-3xl"/>
-        </section>
-        <section class="px-4 py-24 bg-gray-100">
-          <div class="container mx-auto text-center">
-            <h1 class="md:text-xl font-serif text-blue-800">{purposeSection?.title}</h1>
-            <p class="text-xl md:text-3xl">{purposeSection?.subtitle}</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
-              {purposeSection?.list?.map((item: any) => {
-                const CurrentIcon = iconMap[item.id as keyof typeof iconMap];
-                return (
-                <div class="flex flex-col gap-4 rounded-xl p-6 bg-white shadow-sm">
-                  {CurrentIcon && <CurrentIcon class="text-blue-800 mx-auto" size={32} />}
-                  <h2 class="font-serif text-blue-900">{item.title}</h2>
-                  <p class="text-gray-700">{item.description}</p>
-                </div>
-              )})}
-            </div>
-            <button name="learn-more" class="bg-blue-800 mx-auto hover:bg-blue-900 cursor-pointer flex items-center gap-2 text-white font-bold py-2 px-8 mt-12 rounded-full">
-              Learn More About {purposeSection?.title}
-              <ArrowRight class="size-6"/>
-            </button>
-          </div>
-        </section>
-        <section class="container mx-auto px-4 py-24">
-          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div class="flex-1">
-              <h1 class="md:text-xl font-serif text-blue-800">{productSection?.title}</h1>
-              <p class="text-xl md:text-3xl">{productSection?.subtitle}</p>
-            </div>
-            <p class="flex-1">{productSection?.description}</p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 mt-16">
-            {productSection?.list?.map((item: any) => {
-              return (
-                <a href={`/${lang}/details/${item.icon}`} class="flex flex-col gap-2 bg-white group cursor-pointer">
-                  <img src={`/${item.icon}-illustration1.jpg`} loading="lazy" alt={`${item.icon}-illustration1`} class="aspect-video w-full h-auto object-cover rounded-2xl mb-2"/>
-                  <h2 class="font-serif text-blue-900 group-hover:underline group-active:underline underline-offset-2 group-hover:decoration-blue-800">{item.title}</h2>
-                  <p class="text-gray-700">{item.description}</p>
-                </a>
-              )
-            })}
-          </div>
-        </section>
+        <Hero heroData={hero} imageUrl={"/hero.jpg"} client:visible />
+        <DefinitionSection definitionData={definitionSection} client:visible />
+        <PurposeSection purposeData={purposeSection} client:visible />
+        <ProductSection productData={productSection} lang={lang} client:visible />
+        <OnboardingSection onboardingData={onboardingSection} client:visible />
     </main>
 </Layout>

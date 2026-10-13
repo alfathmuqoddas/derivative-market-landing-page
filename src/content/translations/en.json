@@ -63,6 +63,11 @@
           "description": "Agreements between two counterparties to exchange sequences of cash flows over a period, typically based on interest rates, currencies, or commodities."
         }
       ]
+    },
+    "onboardingSection": {
+      "title": "Start Trading Derivatives with Derivio",
+      "description": "Enjoy the benefits of a decentralized derivatives marketplace with low fees and high liquidity. Sign up now and start trading today!",
+      "buttonText": "Sign Up Now!"
     }
   },
   "details": {
