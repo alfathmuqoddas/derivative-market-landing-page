@@ -1,6 +1,6 @@
 ---
 import Layout from '../../../../layouts/Layout.astro';
-import {HeroDetailsSection} from '../../../../components/details';
+import {HeroDetailsSection, HowItWorksSection} from '../../../../components/details';
 import {getEntry} from 'astro:content';
 
 const {product} = Astro.params;
@@ -20,6 +20,7 @@ export async function getStaticPaths() {
 
 const entry = await getEntry('translations', Astro.params.lang);
 const derivativeProduct = entry?.data?.details?.[product as keyof typeof entry.data.details];
+const howItWorksData = derivativeProduct?.howItWorks;
 ---
 <Layout>
     <title slot="head">Details {product} | Derivio</title>
@@ -27,5 +28,6 @@ const derivativeProduct = entry?.data?.details?.[product as keyof typeof entry.d
     <meta slot="head" name="description" content={`Details ${product}`}/>
     <main>
         <HeroDetailsSection heroData={derivativeProduct?.overview} imageUrl={`/${product}-illustration1.jpg`} client:visible />
+        <HowItWorksSection howItWorksData={howItWorksData} product={product} client:visible />
     </main>
 </Layout>

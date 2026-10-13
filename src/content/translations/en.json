@@ -79,23 +79,23 @@
       },
       "howItWorks": {
         "title": "How It Works",
-        "description": "Futures operate within strict regulatory frameworks and standardized contract specifications, ensuring liquidity and removing direct counterparty negotiations.",
+        "description": "Futures use strict regulations and standardized specifications to ensure liquidity and eliminate direct counterparty negotiations.",
         "list": [
           {
             "title": "Standardized Agreement",
-            "description": "Two parties enter into a legally binding contract on a centralized exchange to buy or sell a specific asset at a predetermined price on a specified future date. The exchange standardizes the contract size, quality grade, and expiration date so it can be easily traded."
+            "description": "An agreement traded on a centralized exchange to buy or sell an asset at a set price on a future date, featuring standardized size, grade, and expiration."
           },
           {
             "title": "Margin & Leverage (Collateral Deposit)",
-            "description": "Instead of paying the full value of the asset upfront, both the buyer and seller deposit a fraction of the total contract value—known as the initial margin—into a brokerage account as collateral to guarantee performance."
+            "description": "Traders deposit a fraction of the contract's total value (initial margin) as collateral rather than paying the full amount upfront."
           },
           {
             "title": "Daily Mark-to-Market (MTM)",
-            "description": "At the end of every trading day, the exchange revalues the contract based on current market prices. Any profits or losses are credited or debited directly to the trader's margin account daily. If losses dip below a required threshold, a margin call is triggered, requiring immediate cash top-ups."
+            "description": "Contracts are revalued daily, with profits or losses credited or debited immediately. Falling below required thresholds triggers a margin call."
           },
           {
             "title": "Offset or Settlement",
-            "description": "Before the contract expires, most market participants close out their position by taking an opposite trade to lock in profits or losses. If held until expiration, the contract is settled either via physical delivery of the underlying asset or through cash settlement, depending on the contract type."
+            "description": "Most positions are closed via an offsetting trade before expiration, or settled through physical delivery or cash upon expiration."
           }
         ]
       },
@@ -175,28 +175,30 @@
         "subtitle": "Bespoke Over-The-Counter (OTC) Agreements",
         "description": "Forwards are private, non-standardized bilateral contracts to buy or sell an asset at a set price on a future date. Tailored directly between two parties, they offer complete operational flexibility."
       },
+
       "howItWorks": {
         "title": "How It Works",
-        "description": "Unlike futures, forwards are built directly between counterparty institutions without exchange intervention or daily cash rebalancing.",
+        "description": "Unlike futures, forwards are private agreements negotiated directly between counterparties without exchange intervention or daily cash rebalancing.",
         "list": [
           {
             "title": "Bilateral Over-the-Counter (OTC) Customization",
-            "description": "Two parties (typically a corporate client and a bank or another corporation) negotiate a private agreement directly with one another, off-exchange. They customize every single term of the contract—including the exact asset, precise volume or notional amount, delivery location, and specific maturity date—to match their exact operational needs."
+            "description": "Private, off-exchange agreements negotiated directly between counterparties, where every term—such as asset, volume, and maturity date—is fully customized to their needs."
           },
           {
             "title": "No Upfront Premium or Margin Required",
-            "description": "Unlike futures or options, entering into a forward contract generally requires zero upfront cost or margin deposit. The agreed-upon price (the forward price) is locked in at inception, reflecting the current spot price adjusted for storage costs, convenience yields, and the time value of money (interest rate differentials)."
+            "description": "Requires zero upfront margin or cost to enter. The forward price is locked in at inception based on spot prices, storage costs, and interest rate differentials."
           },
           {
             "title": "Interim Non-Settlement (No Daily Mark-to-Market)",
-            "description": "Throughout the contract's lifespan, market prices for the underlying asset will fluctuate. However, unlike exchange-traded futures, there are no daily cash adjustments, margin calls, or intermediate settlements. The contract remains active and static on the balance sheets of both parties until maturity, meaning unrealized gains or losses accumulate quietly in the background."
+            "description": "No daily cash adjustments or margin calls. Unrealized gains or losses accumulate quietly on the balance sheets until maturity."
           },
           {
             "title": "Terminal Settlement at Expiry",
-            "description": "At the predetermined maturity date, the contract is fulfilled according to its terms. Depending on how it was structured, this final settlement is executed either via physical delivery (the buyer pays the locked price and takes delivery of the physical commodity or currency) or cash settlement (the net financial difference between the spot price at expiry and the locked forward price is paid in cash between the parties)."
+            "description": "The contract is fulfilled at maturity via physical delivery of the underlying asset or through net cash settlement."
           }
         ]
       },
+
       "features": {
         "title": "Product Mechanics",
         "subtitle": "Bilateral Customization & Single Settlement",
@@ -273,25 +275,26 @@
         "subtitle": "Asymmetric Rights and Tailored Payoffs",
         "description": "Options provide the buyer the right—but not the obligation—to buy (Call) or sell (Put) an asset at a fixed strike price. This creates asymmetric risk profiles with capped downside and open upside potential."
       },
+
       "howItWorks": {
         "title": "How It Works",
         "description": "Option dynamics depend on two distinct roles: option buyers who purchase flexibility, and option writers who absorb risk for a premium.",
         "list": [
           {
             "title": "Purchasing the Right (Not the Obligation)",
-            "description": "A buyer enters into a contract by paying a non-refundable upfront fee called the premium to an option writer (seller). In exchange, the buyer acquires the right—but not the obligation—to either buy (Call Option) or sell (Put Option) an underlying asset at a predetermined price (Strike Price) within a specific timeframe."
+            "description": "Buyers pay a non-refundable upfront premium to acquire the right—but not the obligation—to buy (Call) or sell (Put) an underlying asset at a strike price within a timeframe."
           },
           {
             "title": "Leverage and Asymmetric Payoffs",
-            "description": "Because the buyer controls the right to trade the underlying asset without owning it directly, they achieve high capital efficiency. The buyer's risk is strictly capped at the upfront premium paid, while their potential profit upside can be substantial (for Calls) or protected against sharp market drops (for Puts)."
+            "description": "Provides high capital efficiency without direct asset ownership. The buyer's risk is strictly capped at the premium paid, while profit potential can be substantial or protected."
           },
           {
             "title": "Time Decay and Market Valuation Dynamics",
-            "description": "Throughout its lifespan, the option's price fluctuates based on changing market conditions—including the underlying asset's price, proximity to expiration, and market volatility. Crucially, Theta (time decay) works continuously against the option buyer, meaning the contract loses value every day as it approaches expiration if the underlying asset hasn't moved favorably."
+            "description": "Option prices fluctuate based on market conditions and volatility. Crucially, Theta (time decay) reduces the contract's value daily as it nears expiration without favorable movement."
           },
           {
             "title": "Expiration, Exercise, or Closing",
-            "description": "Before or at expiration, the holder has three choices: Exercise the option to buy or sell the underlying asset at the strike price, close the position by trading the option in the open market to lock in gains or cut losses, and let it expire resulting in the loss of 100% of the initial premium."
+            "description": "Holders can exercise the option at the strike price, close the position in the open market to lock in gains or losses, or let it expire worthless, losing 100% of the premium."
           }
         ]
       },
@@ -371,25 +374,26 @@
         "subtitle": "Bilateral Cash Flow Exchanges",
         "description": "Swaps are customized OTC agreements between two parties to exchange sequences of cash flows over a specified timeline, typically converting floating rates or volatile exposure into fixed, predictable liabilities."
       },
+
       "howItWorks": {
         "title": "How It Works",
         "description": "Swaps do not involve exchanging initial principal amounts; instead, net interest or asset return differentials are calculated against a benchmark.",
         "list": [
           {
             "title": "Bilateral Agreement on Notional Principal",
-            "description": "Two counterparties (usually corporations, banks, or financial institutions) negotiate a private over-the-counter (OTC) agreement to exchange financial streams over a set period. They establish a notional principal amount—which is a theoretical reference figure used solely to calculate cash flows and is never actually exchanged between the parties."
+            "description": "Private OTC agreements where counterparties exchange financial streams using a theoretical notional principal amount that is never actually exchanged."
           },
           {
             "title": "Defining the Cash Flow Legs",
-            "description": "The contract is structured around two distinct payment streams (legs) running in opposite directions. Typically, one party pays a fixed rate (providing budget certainty), while the other party pays a floating or variable rate (such as SOFR or EURIBOR) or an alternative asset's return."
+            "description": "Contracts feature two payment legs running in opposite directions, typically exchanging fixed rates for floating/variable rates (like SOFR) or asset returns."
           },
           {
             "title": "Periodic Calculation & Netting Settlements",
-            "description": "Throughout the life of the swap (often spanning years), the parties calculate their respective payment obligations at regular intervals (e.g., quarterly or semi-annually). To maximize efficiency, they use a netting mechanism: rather than sending separate payments back and forth, only the net financial difference is transferred between the parties on each settlement date."
+            "description": "Payment obligations are calculated at regular intervals, using a netting mechanism where only the net financial difference is transferred on settlement dates."
           },
           {
             "title": "Termination, Maturity, or Early Unwinding",
-            "description": "The swap continues until its predetermined maturity date, at which point the final cash flow is settled and the agreement expires. If either party wishes to exit early before maturity, they cannot simply sell it on an exchange; instead, they must negotiate an offsetting swap, execute an early termination agreement, or pay a breakage fee to the counterparty."
+            "description": "Runs until maturity for final settlement. Exiting early requires negotiating an offsetting swap, a termination agreement, or paying a breakage fee."
           }
         ]
       },
