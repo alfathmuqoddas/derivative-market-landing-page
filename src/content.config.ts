@@ -53,6 +53,16 @@ const translations = defineCollection({
           subtitle: z.string(),
           description: z.string(),
         }),
+        howItWorks: z.object({
+          title: z.string(),
+          description: z.string(),
+          list: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+            }),
+          ),
+        }),
         features: z.object({
           title: z.string(),
           subtitle: z.string(),
@@ -92,6 +102,16 @@ const translations = defineCollection({
           title: z.string(),
           subtitle: z.string(),
           description: z.string(),
+        }),
+        howItWorks: z.object({
+          title: z.string(),
+          description: z.string(),
+          list: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+            }),
+          ),
         }),
         features: z.object({
           title: z.string(),
@@ -133,6 +153,16 @@ const translations = defineCollection({
           subtitle: z.string(),
           description: z.string(),
         }),
+        howItWorks: z.object({
+          title: z.string(),
+          description: z.string(),
+          list: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+            }),
+          ),
+        }),
         features: z.object({
           title: z.string(),
           subtitle: z.string(),
@@ -172,6 +202,16 @@ const translations = defineCollection({
           title: z.string(),
           subtitle: z.string(),
           description: z.string(),
+        }),
+        howItWorks: z.object({
+          title: z.string(),
+          description: z.string(),
+          list: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string(),
+            }),
+          ),
         }),
         features: z.object({
           title: z.string(),

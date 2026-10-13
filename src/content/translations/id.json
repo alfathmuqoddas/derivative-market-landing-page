@@ -77,6 +77,28 @@
         "subtitle": "Perjanjian Terstandarisasi yang Diperdagangkan di Bursa",
         "description": "Kontrak futures adalah perjanjian terstandarisasi untuk membeli atau menjual aset tertentu pada harga yang ditetapkan di tanggal masa depan. Diperdagangkan di bursa terpusat, kontrak ini disesuaikan ke harga pasar (mark-to-market) setiap hari untuk meminimalkan risiko gagal bayar."
       },
+      "howItWorks": {
+        "title": "Cara Kerja",
+        "description": "Kontrak berjangka (futures) beroperasi dalam kerangka regulasi yang ketat dan spesifikasi kontrak yang terstandarisasi, sehingga menjamin likuiditas dan meniadakan negosiasi langsung antarpihak lawan transaksi.",
+        "list": [
+          {
+            "title": "Kesepakatan Terstandarisasi",
+            "description": "Dua pihak mengadakan kontrak yang mengikat secara hukum di bursa terpusat untuk membeli atau menjual aset tertentu pada harga yang telah ditentukan di tanggal masa depan yang ditetapkan. Bursa menstandarisasi ukuran kontrak, tingkat kualitas, dan tanggal kedaluwarsa agar kontrak tersebut dapat diperdagangkan dengan mudah."
+          },
+          {
+            "title": "Margin & Leverage (Setoran Jaminan)",
+            "description": "Alih-alih membayar nilai penuh aset di muka, baik pembeli maupun penjual menyetorkan sebagian kecil dari total nilai kontrak—yang dikenal sebagai margin awal—ke dalam rekening pialang sebagai jaminan untuk memastikan pemenuhan kewajiban kontrak."
+          },
+          {
+            "title": "Mark-to-Market (MTM) Harian",
+            "description": "Pada akhir setiap hari perdagangan, bursa melakukan penilaian ulang kontrak berdasarkan harga pasar terkini. Setiap keuntungan atau kerugian dikreditkan atau didebit secara langsung ke rekening margin trader setiap harinya. Jika kerugian melampaui ambang batas yang ditentukan, *margin call* akan dipicu, yang mengharuskan penambahan dana tunai segera."
+          },
+          {
+            "title": "Offset atau Penyelesaian",
+            "description": "Sebelum kontrak kedaluwarsa, sebagian besar pelaku pasar menutup posisi mereka dengan melakukan transaksi yang berlawanan untuk mengunci keuntungan atau kerugian. Jika dipertahankan hingga jatuh tempo, kontrak diselesaikan baik melalui penyerahan fisik aset dasar maupun melalui penyelesaian tunai, tergantung pada jenis kontraknya."
+          }
+        ]
+      },
       "features": {
         "title": "Mekanisme Produk",
         "subtitle": "Kontrak Terstandarisasi & Penyelesaian Harian",
@@ -152,6 +174,28 @@
         "title": "Kontrak Forward (Serah)",
         "subtitle": "Perjanjian Khusus Over-The-Counter (OTC)",
         "description": "Forward adalah kontrak bilateral pribadi yang tidak terstandarisasi untuk membeli atau menjual aset pada harga yang ditetapkan di tanggal masa depan. Disesuaikan langsung antara dua pihak, kontrak ini menawarkan fleksibilitas operasional penuh."
+      },
+      "howItWorks": {
+        "title": "Cara Kerja",
+        "description": "Berbeda dengan kontrak berjangka (futures), kontrak forward dibuat secara langsung antarlembaga mitra transaksi (counterparty) tanpa intervensi bursa atau penyesuaian ulang kas harian.",
+        "list": [
+          {
+            "title": "Kustomisasi Bilateral Over-the-Counter (OTC)",
+            "description": "Dua pihak (biasanya klien korporat dan bank atau perusahaan lain) menegosiasikan kesepakatan pribadi secara langsung satu sama lain, di luar bursa. Mereka menyesuaikan setiap ketentuan kontrak—termasuk aset spesifik, volume atau nilai nosional yang tepat, lokasi penyerahan, dan tanggal jatuh tempo tertentu—agar sesuai dengan kebutuhan operasional mereka."
+          },
+          {
+            "title": "Tidak Diperlukan Premi atau Margin di Awal",
+            "description": "Berbeda dengan kontrak berjangka atau opsi, pembuatan kontrak forward umumnya tidak memerlukan biaya awal atau setoran margin. Harga yang disepakati (harga forward) ditetapkan sejak awal, mencerminkan harga spot saat ini yang disesuaikan dengan biaya penyimpanan, convenience yield, dan nilai waktu dari uang (selisih suku bunga)."
+          },
+          {
+            "title": "Tanpa Penyelesaian Antara (Tidak Ada Mark-to-Market Harian)",
+            "description": "Selama masa berlaku kontrak, harga pasar aset dasar akan berfluktuasi. Namun, tidak seperti kontrak berjangka yang diperdagangkan di bursa, tidak ada penyesuaian kas harian, margin call, atau penyelesaian antara. Kontrak tetap aktif dan statis pada neraca kedua belah pihak hingga jatuh tempo, yang berarti keuntungan atau kerugian yang belum terealisasi terakumulasi secara diam-diam."
+          },
+          {
+            "title": "Penyelesaian Akhir saat Jatuh Tempo",
+            "description": "Pada tanggal jatuh tempo yang telah ditentukan, kontrak dipenuhi sesuai dengan ketentuannya. Tergantung pada struktur kontraknya, penyelesaian akhir ini dilakukan baik melalui penyerahan fisik (pembeli membayar harga yang telah ditetapkan dan menerima penyerahan komoditas atau mata uang fisik) maupun penyelesaian tunai (selisih keuangan bersih antara harga spot saat jatuh tempo dan harga forward yang ditetapkan dibayarkan secara tunai antarpihak)."
+          }
+        ]
       },
       "features": {
         "title": "Mekanisme Produk",
@@ -229,6 +273,28 @@
         "subtitle": "Hak Asimetris dan Profil Imbal Hasil yang Disesuaikan",
         "description": "Opsi memberikan pembeli hak—tetapi bukan kewajiban—untuk membeli (Call) atau menjual (Put) aset pada harga eksekusi tetap. Ini menciptakan profil risiko asimetris dengan batas bawah kerugian dan potensi keuntungan tanpa batas."
       },
+      "howItWorks": {
+        "title": "Cara Kerja",
+        "description": "Dinamika opsi bergantung pada dua peran berbeda: pembeli opsi yang membeli fleksibilitas, dan penerbit opsi (writer) yang menanggung risiko demi mendapatkan premi.",
+        "list": [
+          {
+            "title": "Membeli Hak (Bukan Kewajiban)",
+            "description": "Pembeli masuk ke dalam kontrak dengan membayar biaya awal yang tidak dapat dikembalikan—disebut premi—kepada penerbit opsi (penjual). Sebagai imbalannya, pembeli memperoleh hak—namun bukan kewajiban—untuk membeli (Call Option) atau menjual (Put Option) aset dasar pada harga yang telah ditentukan (Strike Price) dalam jangka waktu tertentu."
+          },
+          {
+            "title": "Leverage dan Imbal Hasil Asimetris",
+            "description": "Karena pembeli memegang kendali atas hak untuk memperdagangkan aset dasar tanpa memilikinya secara langsung, mereka mencapai efisiensi modal yang tinggi. Risiko pembeli dibatasi secara ketat hanya sebesar premi awal yang dibayarkan, sementara potensi keuntungan bisa sangat besar (untuk Call Option) atau memberikan perlindungan terhadap penurunan tajam pasar (untuk Put Option)."
+          },
+          {
+            "title": "Penyusutan Nilai Waktu (Time Decay) dan Dinamika Valuasi Pasar",
+            "description": "Selama masa berlakunya, harga opsi berfluktuasi berdasarkan perubahan kondisi pasar—termasuk harga aset dasar, sisa waktu menuju kedaluwarsa, dan volatilitas pasar. Yang terpenting, Theta (penyusutan nilai waktu) terus-menerus bekerja merugikan pembeli opsi; artinya, kontrak kehilangan nilainya setiap hari seiring mendekatnya masa kedaluwarsa jika aset dasar tidak bergerak ke arah yang menguntungkan."
+          },
+          {
+            "title": "Kedaluwarsa, Eksekusi, atau Penutupan Posisi",
+            "description": "Sebelum atau pada saat kedaluwarsa, pemegang opsi memiliki tiga pilihan: Mengeksekusi opsi untuk membeli atau menjual aset dasar pada harga kesepakatan (strike price); menutup posisi dengan memperdagangkan opsi tersebut di pasar terbuka untuk mengunci keuntungan atau membatasi kerugian; atau membiarkan opsi kedaluwarsa, yang mengakibatkan hilangnya 100% premi awal."
+          }
+        ]
+      },
       "features": {
         "title": "Mekanisme Produk",
         "subtitle": "Harga Eksekusi, Premi, dan Kewajiban Asimetris",
@@ -304,6 +370,28 @@
         "title": "Kontrak Swap",
         "subtitle": "Pertukaran Arus Kas Bilateral",
         "description": "Swap adalah perjanjian OTC yang disesuaikan antara dua pihak untuk mempertukarkan serangkaian arus kas selama jangka waktu tertentu, biasanya mengonversi suku bunga mengambang atau paparan volatil menjadi kewajiban yang tetap dan dapat diprediksi."
+      },
+      "howItWorks": {
+        "title": "Cara Kerja",
+        "description": "Swap tidak melibatkan pertukaran jumlah pokok awal; sebaliknya, selisih bunga bersih atau imbal hasil aset dihitung berdasarkan suatu tolok ukur.",
+        "list": [
+          {
+            "title": "Kesepakatan Bilateral mengenai Pokok Nosional",
+            "description": "Dua pihak lawan transaksi (biasanya perusahaan, bank, atau lembaga keuangan) menegosiasikan kesepakatan *over-the-counter* (OTC) secara privat untuk mempertukarkan arus keuangan selama periode tertentu. Mereka menetapkan jumlah pokok nosional—yaitu angka acuan teoretis yang digunakan semata-mata untuk menghitung arus kas dan tidak pernah benar-benar dipertukarkan antarpihak."
+          },
+          {
+            "title": "Menentukan Komponen Arus Kas",
+            "description": "Kontrak ini disusun berdasarkan dua aliran pembayaran berbeda (*legs*) yang berjalan dengan arah berlawanan. Biasanya, satu pihak membayar dengan suku bunga tetap (memberikan kepastian anggaran), sementara pihak lainnya membayar dengan suku bunga mengambang atau variabel (seperti SOFR atau EURIBOR) atau imbal hasil aset alternatif."
+          },
+          {
+            "title": "Penghitungan Berkala & Penyelesaian secara *Netting*",
+            "description": "Sepanjang masa berlaku swap (yang sering kali berlangsung selama bertahun-tahun), para pihak menghitung kewajiban pembayaran masing-masing secara berkala (misalnya, setiap triwulan atau semester). Untuk memaksimalkan efisiensi, mereka menggunakan mekanisme *netting*: alih-alih saling mengirim pembayaran secara terpisah, hanya selisih keuangan bersih yang ditransfer antarpihak pada setiap tanggal penyelesaian."
+          },
+          {
+            "title": "Pengakhiran, Jatuh Tempo, atau Penyelesaian Awal (*Unwinding*)",
+            "description": "Swap berlanjut hingga tanggal jatuh tempo yang telah ditetapkan sebelumnya; pada saat itulah arus kas terakhir diselesaikan dan perjanjian berakhir. Jika salah satu pihak ingin keluar lebih awal sebelum jatuh tempo, mereka tidak bisa begitu saja menjualnya di bursa; sebaliknya, mereka harus menegosiasikan swap penyeimbang (*offsetting swap*), melaksanakan perjanjian pengakhiran awal, atau membayar biaya pembatalan (*breakage fee*) kepada pihak lawan transaksi."
+          }
+        ]
       },
       "features": {
         "title": "Mekanisme Produk",
