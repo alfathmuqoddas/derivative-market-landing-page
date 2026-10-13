@@ -4,7 +4,8 @@ import { defineConfig, fontProviders } from "astro/config";
 import cloudflare from "@astrojs/cloudflare";
 
 import tailwindcss from "@tailwindcss/vite";
-import preact from "@astrojs/preact";
+
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +15,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [preact()],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "id"],
@@ -22,6 +22,7 @@ export default defineConfig({
       prefixDefaultLocale: true,
     },
   },
+
   fonts: [
     {
       provider: fontProviders.google(),
@@ -36,4 +37,6 @@ export default defineConfig({
       fallbacks: ["serif"],
     },
   ],
+
+  integrations: [react()],
 });
