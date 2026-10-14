@@ -1,5 +1,19 @@
-import { FiShield, FiActivity, FiTrendingUp, FiEye } from "react-icons/fi";
-import { Wallet, Target, Sliders, ArrowLeftRight } from "lucide-react";
+import {
+  FiShield,
+  FiActivity,
+  FiTrendingUp,
+  FiEye,
+  FiTarget,
+  FiCreditCard,
+  FiRepeat,
+  FiSliders,
+  FiLock,
+  FiLayers,
+  FiRefreshCw,
+  FiGlobe,
+  FiPercent,
+  FiFileText,
+} from "react-icons/fi";
 
 type BenefitsProps = {
   benefitsData: {
@@ -7,6 +21,7 @@ type BenefitsProps = {
     subtitle: string;
     description: string;
     list: {
+      id: string;
       title: string;
       description: string;
     }[];
@@ -22,22 +37,22 @@ const iconMap: Record<string, any> = {
     transparentPricing: FiEye,
   },
   forwards: {
-    perfectHedgeAlignment: Target,
-    noDailyCashDrag: Wallet,
-    tailoredForeignExchange: Sliders,
-    flexibleSettlementModes: ArrowLeftRight,
+    perfectHedgeAlignment: FiTarget,
+    noDailyCashDrag: FiCreditCard,
+    tailoredForeignExchange: FiRepeat,
+    flexibleSettlementModes: FiSliders,
   },
   options: {
-    downsideInsurance: "",
-    cappedRiskForBuyers: "",
-    strategicVersatility: "",
-    capitalLeverage: "",
+    downsideInsurance: FiShield,
+    cappedRiskForBuyers: FiLock,
+    strategicVersatility: FiLayers,
+    capitalLeverage: FiTrendingUp,
   },
   swaps: {
-    interestRateRiskTransformation: "",
-    currencyRiskAlignment: "",
-    lowerBorrowingCosts: "",
-    offBalanceSheetFlexibility: "",
+    interestRateRiskTransformation: FiRefreshCw,
+    currencyRiskAlignment: FiGlobe,
+    lowerBorrowingCosts: FiPercent,
+    offBalanceSheetFlexibility: FiFileText,
   },
 };
 
@@ -45,6 +60,7 @@ export const BenefitsDetailsSection = ({
   benefitsData,
   product,
 }: BenefitsProps) => {
+  console.log(product);
   return (
     <section className="px-4 py-24 bg-gray-100">
       <div className="container mx-auto">
@@ -56,13 +72,17 @@ export const BenefitsDetailsSection = ({
           {benefitsData?.list?.map((item: any, index: number) => {
             const CurrentIcon = iconMap[product]?.[item.id];
 
+            console.log({ CurrentIcon, itemId: item.id, product });
+
             return (
               <div
                 key={index}
-                className="flex flex-col gap-4 rounded-xl p-6 bg-white shadow-sm"
+                className="flex flex-col gap-4 rounded-2xl p-6 bg-white shadow-sm"
               >
                 {CurrentIcon && (
-                  <CurrentIcon className="text-blue-800 mx-auto" size={32} />
+                  <div className="size-10 flex items-center justify-center rounded-full bg-blue-800">
+                    <CurrentIcon className="text-white" size={24} />
+                  </div>
                 )}
                 <h2 className="font-serif text-blue-900">{item.title}</h2>
                 <p className="text-gray-700">{item.description}</p>

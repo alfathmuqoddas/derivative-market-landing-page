@@ -39,7 +39,7 @@ export const PurposeSection = ({ purposeData }: PurposeSectionProps) => {
             return (
               <div
                 key={item.id}
-                className="flex flex-col gap-4 rounded-xl p-6 bg-white shadow-sm"
+                className="flex flex-col gap-4 rounded-2xl p-6 bg-white shadow-sm"
               >
                 {CurrentIcon && (
                   <CurrentIcon className="text-blue-800 mx-auto" size={32} />

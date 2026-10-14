@@ -3,7 +3,7 @@ import Layout from '../../../../layouts/Layout.astro';
 import {HeroDetailsSection, HowItWorksSection, BenefitsDetailsSection} from '../../../../components/details';
 import {getEntry} from 'astro:content';
 
-const {product} = Astro.params;
+const {product, lang} = Astro.params;
 
 export async function getStaticPaths() {
   return [
@@ -18,7 +18,7 @@ export async function getStaticPaths() {
   ];
 }
 
-const entry = await getEntry('translations', Astro.params.lang);
+const entry = await getEntry('translations', lang);
 const derivativeProduct = entry?.data?.details?.[product as keyof typeof entry.data.details];
 const howItWorksData = derivativeProduct?.howItWorks;
 const benefitsData = derivativeProduct?.benefits;
