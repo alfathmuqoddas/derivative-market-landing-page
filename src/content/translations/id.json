@@ -128,18 +128,22 @@
         "description": "Pelaku pasar mengandalkan futures untuk mengunci harga masa depan dan mendapatkan paparan yang efisien secara modal di seluruh kelas aset utama global.",
         "list": [
           {
+            "id": "operationalHedging",
             "title": "Lindung Nilai Operasional",
             "description": "Produsen dan konsumen (misalnya, maskapai penerbangan, petani) mengunci harga input/output masa depan untuk menstabilkan margin."
           },
           {
+            "id": "highLiquidity",
             "title": "Likuiditas Tinggi",
             "description": "Kedalaman buku order memungkinkan investor institusional masuk dan keluar dari posisi besar secara cepat dengan slippage yang rendah."
           },
           {
+            "id": "capitalEfficiency",
             "title": "Efisiensi Modal",
             "description": "Kemampuan leverage yang tinggi memungkinkan pedagang mengendalikan paparan besar dengan modal awal yang minimal."
           },
           {
+            "id": "transparentPricing",
             "title": "Transparansi Harga",
             "description": "Pembentukan harga di pasar terbuka secara berkelanjutan memastikan penilaian waktu nyata (real-time) dan rentang bid-ask yang ketat."
           }
@@ -226,18 +230,22 @@
         "description": "Korporasi menggunakan kontrak forward ketika kontrak bursa terstandarisasi gagal mencocokkan garis waktu, volume, atau spesifikasi mata uang mereka yang tepat.",
         "list": [
           {
+            "id": "perfectHedgeAlignment",
             "title": "Kesesuaian Lindung Nilai Sempurna",
             "description": "Menghilangkan risiko basis dengan mencocokkan ukuran kontrak dan tanggal pengiriman secara persis dengan arus kas korporasi."
           },
           {
+            "id": "noDailyCashDrag",
             "title": "Tanpa Beban Kas Harian",
             "description": "Tidak adanya margin call harian menghindar timbulnya gangguan arus kas perantara selama siklus hidup kontrak."
           },
           {
+            "id": "tailoredForeignExchange",
             "title": "Perlindungan Nilai Tukar Mata Uang (FX) yang Disesuaikan",
             "description": "Banyak digunakan oleh importir dan eksportir untuk mengunci nilai tukar masa depan yang tepat."
           },
           {
+            "id": "flexibleSettlementModes",
             "title": "Mode Penyelesaian Fleksibel",
             "description": "Dirancang untuk pengiriman fisik barang secara aktual atau penyelesaian kas bersih pada saat jatuh tempo."
           }
@@ -324,18 +332,22 @@
         "description": "Opsi bersifat unik karena memungkinkan pelaku pasar melindungi diri dari risiko penurunan sambil tetap membuka peluang untuk keuntungan kenaikan harga.",
         "list": [
           {
+            "id": "downsideInsurance",
             "title": "Asuransi Kerugian (Downside Insurance)",
             "description": "Protective Put bertindak sebagai polis asuransi untuk portofolio saham terhadap kejatuhan pasar."
           },
           {
+            "id": "cappedRiskForBuyers",
             "title": "Risiko Terbatas bagi Pembeli",
             "description": "Kerugian maksimum bagi pembeli opsi secara ketat terbatas pada premi dimuka yang dibayarkan."
           },
           {
+            "id": "strategicVersatility",
             "title": "Fleksibilitas Strategis",
             "description": "Memungkinkan akumulasi pendapatan (Covered Call), taruhan arah pasar, atau perdagangan volatilitas (Straddles)."
           },
           {
+            "id": "capitalLeverage",
             "title": "Leverage Modal",
             "description": "Mengendalikan aset acuan dalam jumlah signifikan dengan pengeluaran modal yang relatif rendah melalui premi opsi."
           }
@@ -422,18 +434,22 @@
         "description": "Korporasi dan lembaga keuangan memanfaatkan swap untuk mengubah struktur kewajiban tanpa merestrukturisasi atau mendanai ulang pinjaman utama.",
         "list": [
           {
+            "id": "interestRateRiskTransformation",
             "title": "Transformasi Risiko Suku Bunga",
             "description": "Mengonversi utang korporasi suku bunga mengambang menjadi utang suku bunga tetap untuk mengunci biaya bunga."
           },
           {
+            "id": "currencyRiskAlignment",
             "title": "Penyelarasan Risiko Mata Uang",
             "description": "Cross-currency swap melindung nilai utang luar negeri multi-nasional dan mencocokkan aliran pendapatan."
           },
           {
+            "id": "lowerBorrowingCosts",
             "title": "Biaya Pinjaman Lebih Rendah",
             "description": "Memungkinkan pihak lawan memanfaatkan keunggulan komparatif relatif di pasar kredit yang berbeda."
           },
           {
+            "id": "offBalanceSheetFlexibility",
             "title": "Fleksibilitas Off-Balance-Sheet",
             "description": "Menyesuaikan paparan suku bunga tanpa mengubah atau menegosiasikan ulang kewajiban utang utama."
           }

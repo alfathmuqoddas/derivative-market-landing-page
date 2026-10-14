@@ -128,18 +128,22 @@
         "description": "Market participants rely on futures to lock in forward pricing and gain capital-efficient exposure across major global asset classes.",
         "list": [
           {
+            "id": "operationalHedging",
             "title": "Operational Hedging",
             "description": "Producers and consumers (e.g., airlines, farmers) lock in future input/output prices to stabilize margins."
           },
           {
+            "id": "highLiquidity",
             "title": "High Liquidity",
             "description": "Deep order books allow institutional investors to enter and exit large positions quickly with low slippage."
           },
           {
+            "id": "capitalEfficiency",
             "title": "Capital Efficiency",
             "description": "High leverage capabilities allow traders to control large exposure with minimal upfront equity."
           },
           {
+            "id": "transparentPricing",
             "title": "Transparent Pricing",
             "description": "Continuous open market price discovery ensures real-time valuation and tight bid-ask spreads."
           }
@@ -223,23 +227,27 @@
         ]
       },
       "benefits": {
-        "title": "Primary Drivers & Benefits",
+        "title": "Primary Drivers & Benefits of Forwards Contracts",
         "subtitle": "Precision Matching and Cash Flow Certainty",
         "description": "Corporations utilize forward contracts when standardized exchange contracts fail to match their exact timeline, volume, or currency specifications.",
         "list": [
           {
+            "id": "perfectHedgeAlignment",
             "title": "Perfect Hedge Alignment",
             "description": "Eliminates basis risk by matching contract size and delivery date exactly to corporate cash flows."
           },
           {
+            "id": "noDailyCashDrag",
             "title": "No Daily Cash Drag",
             "description": "Absence of daily margin calls avoids intermediate cash flow disruptions during the contract lifecycle."
           },
           {
+            "id": "tailoredForeignExchange",
             "title": "Tailored Foreign Exchange (FX) Protection",
             "description": "Widely used by importers and exporters to lock in exact future exchange rates."
           },
           {
+            "id": "flexibleSettlementModes",
             "title": "Flexible Settlement Modes",
             "description": "Designed for either actual physical delivery of goods or net cash settlement at expiry."
           }
@@ -327,18 +335,22 @@
         "description": "Options are unique because they allow market participants to protect against downside risks while leaving the door open for upside gains.",
         "list": [
           {
+            "id": "downsideInsurance",
             "title": "Downside Insurance",
             "description": "Protective Puts act as an insurance policy for stock portfolios against market crashes."
           },
           {
+            "id": "cappedRiskForBuyers",
             "title": "Capped Risk for Buyers",
             "description": "Maximum loss for option buyers is strictly limited to the upfront premium paid."
           },
           {
+            "id": "strategicVersatility",
             "title": "Strategic Versatility",
             "description": "Enables income generation (Covered Calls), directional bets, or volatility trades (Straddles)."
           },
           {
+            "id": "capitalLeverage",
             "title": "Capital Leverage",
             "description": "Controls significant underlying assets with relatively low capital deployment via options premiums."
           }
@@ -426,18 +438,22 @@
         "description": "Corporations and financial institutions leverage swaps to transform liability structures without refinancing underlying loans.",
         "list": [
           {
+            "id": "interestRateRiskTransformation",
             "title": "Interest Rate Risk Transformation",
             "description": "Converts floating-rate corporate debt into fixed-rate debt to lock in interest costs."
           },
           {
+            "id": "currencyRiskAlignment",
             "title": "Currency Risk Alignment",
             "description": "Cross-currency swaps hedge multi-national foreign debt and matching revenue streams."
           },
           {
+            "id": "lowerBorrowingCosts",
             "title": "Lower Borrowing Costs",
             "description": "Allows counterparties to exploit relative comparative advantages in different credit markets."
           },
           {
+            "id": "offBalanceSheetFlexibility",
             "title": "Off-Balance-Sheet Flexibility",
             "description": "Adjusts interest rate exposure without altering or renegotiating underlying debt obligations."
           }
