@@ -3,6 +3,8 @@ import Layout from '../../../../layouts/Layout.astro';
 import {HeroDetailsSection, HowItWorksSection, BenefitsDetailsSection} from '../../../../components/details';
 import {getEntry} from 'astro:content';
 
+export const prerender = true;
+
 const {product, lang} = Astro.params;
 
 export async function getStaticPaths() {

@@ -3,6 +3,8 @@ import {getEntry} from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
 import {Hero, Definition as DefinitionSection, PurposeSection, ProductSection, OnboardingSection} from '../../components/home';
 
+export const prerender = true;
+
 export async function getStaticPaths() {
   return [
     { params: { lang: 'en' } },
