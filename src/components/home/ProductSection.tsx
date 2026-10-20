@@ -32,12 +32,14 @@ export const ProductSection = ({ productData, lang }: ProductSectionProps) => {
               href={`/${lang}/details/${item.icon}`}
               className="flex flex-col gap-2 bg-white group cursor-pointer"
             >
-              <img
-                src={`/${item.icon}-illustration1.jpg`}
-                loading="lazy"
-                alt={`${item.icon}-illustration1`}
-                className="aspect-video w-full h-auto object-cover rounded-2xl mb-2"
-              />
+              <figure className="aspect-video w-full overflow-hidden rounded-2xl mb-2">
+                <img
+                  src={`/${item.icon}-illustration1.jpg`}
+                  loading="lazy"
+                  alt={`${item.icon}-illustration1`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
+                />
+              </figure>
               <h2 className="font-serif text-blue-900 group-hover:underline group-active:underline underline-offset-2 group-hover:decoration-blue-800">
                 {item.title}
               </h2>

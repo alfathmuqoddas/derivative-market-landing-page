@@ -20,9 +20,9 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`${isScrolled ? "bg-white/30 backdrop-blur-md shadow-sm" : "bg-transparent"} flex items-center max-w-384 fixed left-1/2 -translate-x-1/2 rounded-full p-4 top-4 h-16 z-50 w-full`}
+      className={`${isScrolled ? "bg-white shadow-sm" : "bg-transparent"} fixed p-4 top-0 h-16 z-50 w-screen`}
     >
-      <div className="flex justify-between items-center w-full">
+      <div className="max-w-384 mx-auto md:px-4 flex justify-between items-center w-full">
         <a href="/">
           <h1 className="text-xl font-serif font-bold text-blue-800">
             DERIVIO

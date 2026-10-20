@@ -60,7 +60,6 @@ export const BenefitsDetailsSection = ({
   benefitsData,
   product,
 }: BenefitsProps) => {
-  console.log(product);
   return (
     <section className="px-4 py-24 bg-gray-100">
       <div className="container mx-auto">
@@ -71,8 +70,6 @@ export const BenefitsDetailsSection = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
           {benefitsData?.list?.map((item: any, index: number) => {
             const CurrentIcon = iconMap[product]?.[item.id];
-
-            console.log({ CurrentIcon, itemId: item.id, product });
 
             return (
               <div
