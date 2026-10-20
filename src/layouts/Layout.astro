@@ -2,6 +2,7 @@
 import {Font} from 'astro:assets';
 import Navbar from '../components/Navbar.tsx';
 import Footer from '../components/Footer.astro';
+import {ClientRouter} from 'astro:transitions';
 import '../styles/global.css';
 
 const currentLang = Astro.currentLocale || 'en';
@@ -19,9 +20,10 @@ const currentLang = Astro.currentLocale || 'en';
 		<Font cssVariable="--font-sans" preload />
 		<Font cssVariable="--font-serif" preload />
 		<slot name="head" />
+		<ClientRouter />
 	</head>
 	<body>
-		<Navbar client:only="preact"/>
+		<Navbar client:only="preact" transition:animate="slide"/>
 			<slot />
 		<Footer />
 	</body>
